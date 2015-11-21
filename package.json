@@ -1,0 +1,29 @@
+{
+  "name": "weekend01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/script.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckroening/weekend_challenge_01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ckroening/weekend_challenge_01/issues"
+  },
+  "homepage": "https://github.com/ckroening/weekend_challenge_01#readme",
+  "devDependencies": {
+    "karma": "^0.13.15",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-qunit": "^0.1.8",
+    "phantomjs": "^1.9.18",
+    "qunitjs": "^1.20.0"
+  }
+}
