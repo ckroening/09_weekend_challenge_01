@@ -1,3 +1,23 @@
 table, tr, th, td {
 	border: 1px solid black;
 }
+
+#employees.rating1, tr, td {
+	background-color: red;
+}
+
+.rating2, tr, td {
+	background-color: orange;
+}
+
+.rating3, tr, td {
+	background-color: yellow;
+}
+
+.rating4, tr, td {
+	background-color: green;
+}
+
+.rating5, tr, td {
+	background-color: blue;
+}

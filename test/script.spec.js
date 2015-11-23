@@ -48,7 +48,10 @@ QUnit.test('addEmployee', function(assert) {
   addEmployee(employee);
   var rows = $('#employees').children().children();
   assert.equal(rows.length, 2);
-  var columns = rows.first().next().children();
+  var row = rows.first().next();
+  assert.ok(row.hasClass('rating2'));
+  /* (remember: rows.first().next() = row) */
+  var columns = row.children();
   var column = columns.first();
 
   assert.equal(column.text(), 'Ralph');
@@ -62,6 +65,9 @@ QUnit.test('addEmployee', function(assert) {
   assert.equal(column.text(), '2');
   column = column.next();
   assert.equal(column.text(), '3000');
+  column = column.next();
+  assert.equal(column.text(), 'Remove');
+  assert.equal(column.children().first().prop('nodeName'), 'BUTTON')
 
   var employee2 = {
     firstName: 'George',
@@ -74,7 +80,10 @@ QUnit.test('addEmployee', function(assert) {
   addEmployee(employee2);
   var rows = $('#employees').children().children();
   assert.equal(rows.length, 3);
-  var columns = rows.first().next().next().children();
+  var row = rows.first().next().next();
+  assert.ok(row.hasClass('rating1'));
+  /* (remember: rows.first().next() = row) */
+  var columns = row.children();
   var column = columns.first();
 
   assert.equal(column.text(), 'George');
@@ -90,4 +99,12 @@ QUnit.test('addEmployee', function(assert) {
   assert.equal(column.text(), '2000');
 
 })
+/*write remove button test*
+QUnit.test
 
+QUnit.test("click submit", function(assert) {
+    assert.equal('', $('#output').text());
+    $('#name').val('Test');
+    $('#submit').trigger('click');
+    assert.equal($('#output').text(), 'Hello, Test');
+}); */

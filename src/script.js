@@ -12,12 +12,14 @@ var getInputs = function() {
 
 var addEmployee = function(employee) {
   var newRow = $('<tr></tr>');
+  newRow.addClass('rating' + employee.lastReviewScore);
   newRow.append($('<td></td>').text(employee.firstName));
   newRow.append($('<td></td>').text(employee.lastName));
   newRow.append($('<td></td>').text(employee.employeeNum));
   newRow.append($('<td></td>').text(employee.title));
   newRow.append($('<td></td>').text(employee.lastReviewScore));
   newRow.append($('<td></td>').text(employee.salary));
+  newRow.append($('<td></td>').append($('<button type="button">Remove</button>')));
   $('#employees').append(newRow);
 }
 
