@@ -1,55 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Employee Information System</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="script.js"></script>
-</head>
-<body>
+  <html>
+  <html>
+    <head>
+    	<title>Employee Information System</title>
+    	<link rel="stylesheet" href="style.css">
+    	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    	<script src="script.js"></script>
+    </head>
+  <body>
+    <h1>New Employee</h1>
+      <h3>Total Employee Salary: $<span id="total">0</span></h3>
+      <form>
+        <table>
+      		<tr>
+      			<td>First Name:</td>
+      			<td><input type="text" id="firstName"></td>
+      		</tr>
+      		<tr>
+      			<td>Last Name:</td>
+      			<td><input type="text" id="lastName"></td>
+      		</tr>
+      		<tr>
+      			<td>Employee Number:</td>
+      			<td><input type="text" id="employeeNum"></td>
+      		</tr>
+      		<tr>
+      			<td>Title:</td>
+      			<td><input type="text" id="title"></td>
+      		</tr>
+      		<tr>
+      			<td>Last Review Score:</td>
+      			<td><input type="text" id="lastReviewScore"></td>
+      		</tr>
+      		<tr>
+      			<td>Salary:</td>
+      			<td><input type="text" id="salary"></td>
+      		</tr>
+      	</table>
+      	<p><button type="reset" id="add">Add Employee</button></p>
+        <p><button type="reset" id="random">Random Employee</button></p>
+      </form>
 
-</html><h2>New Employee</h2>
-<form>
-	<table>
-		<tr>
-			<td>First Name:</td>
-			<td><input type="text" id="firstName"></td>
-		</tr>
-		<tr>
-			<td>Last Name:</td>
-			<td><input type="text" id="lastName"></td>
-		</tr>
-		<tr>
-			<td>Employee Number:</td>
-			<td><input type="text" id="employeeNum"></td>
-		</tr>
-		<tr>
-			<td>Title:</td>
-			<td><input type="text" id="title"></td>
-		</tr>
-		<tr>
-			<td>Last Review Score:</td>
-			<td><input type="text" id="lastReviewScore"></td>
-		</tr>
-		<tr>
-			<td>Salary:</td>
-			<td><input type="text" id="salary"></td>
-		</tr>
-	</table>
-	<button type="button" id="button">Add Employee</button>
-</form>
-
-<h2>Employee Information</h2>
-<table id="employees">
-  <tr>
-    <th>First name</th>
-    <th>Last name</th>
-    <th>Employee #</th>
-    <th>Title</th>
-    <th>Last Review Score</th>
-    <th>Salary</th>
-    <th>Action</th>
-  </tr>
-</table>
-</body>
-</html>
+      <h2>Employee Information</h2>
+        <table id="employees">
+          <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Employee #</th>
+            <th>Title</th>
+            <th>Last Review Score</th>
+            <th>Salary</th>
+            <th>Action</th>
+          </tr>
+          <tr></tr>
+        </table>
+  </body>
+  </html>

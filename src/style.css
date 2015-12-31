@@ -1,23 +1,41 @@
-table, tr, th, td {
-	border: 1px solid black;
+html, body, h1, li, h2, p, br, tr, td {
+  font-family: none;
+  font-style: none;
 }
-
+h1 {
+  font-family: Georgia;
+  margin: 10% 40% 10% 40%;
+  text-align: center;
+  border: 2px solid gray;
+}
+table {
+  float: left;
+  margin: auto auto auto 15%;
+  border: 2px solid gray;
+}
+#employees {
+  float: right;
+  margin: auto 14% 30% auto;
+}
+h2 {
+  float: right;
+  margin: auto 15% auto auto;
+}
 #employees.rating1, tr, td {
 	background-color: red;
 }
-
-.rating2, tr, td {
+#employees.rating2, tr, td {
 	background-color: orange;
 }
-
-.rating3, tr, td {
+#employees.rating3, tr, td {
 	background-color: yellow;
 }
-
-.rating4, tr, td {
+#employees.rating4, tr, td {
 	background-color: green;
 }
-
 .rating5, tr, td {
 	background-color: blue;
+}
+tr, td {
+  background-color: white;
 }
