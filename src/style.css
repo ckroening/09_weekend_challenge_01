@@ -1,6 +1,10 @@
 html, body, h1, li, h2, p, br, tr, td {
   font-family: none;
   font-style: none;
+  background-color: blue;
+}
+body {
+  background-color: blue;
 }
 h1 {
   font-family: Georgia;
@@ -33,9 +37,9 @@ h2 {
 #employees.rating4, tr, td {
 	background-color: green;
 }
-.rating5, tr, td {
+#employees.rating5, tr, td {
 	background-color: blue;
 }
 tr, td {
-  background-color: white;
+  background-color: red;
 }
